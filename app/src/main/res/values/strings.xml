@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QuickSell</string>
+    <string name="activity_homepage1">SELL YOUR FURNITURE</string>
+    <string name="activity_homepage2">REGISTERED SHOP</string>
+    <string name="activity_fillcontact">FILL YOUR PRODUCT DETAILS</string>
+    <string name="activity_uploadphoto">FILL YOUR PRODUCT DETAILS</string>
+    <string name="uploadphoto_button">UPLOAD IMAGE</string>
+</resources>

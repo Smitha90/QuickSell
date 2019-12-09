@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangle_shape"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:text="@string/activity_uploadphoto"
+            android:textStyle="bold">
+
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/Grid1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhiteshade"
+        android:columnCount="3"
+        android:rowCount="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@color/colorwhiteshade"
+            android:text="1st Product" />
+
+        <TextView
+            android:id="@+id/textSucces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:paddingLeft="50dp"
+            android:text="Added successfully"
+            android:visibility="invisible" />
+
+      <!--  <ImageView
+            android:id="@+id/deleteImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/delete"
+            android:visibility="invisible" />-->
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/Grid2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colourLight"
+        android:columnCount="2"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/uploadButt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="perform_action_gallery"
+            android:text="@string/uploadphoto_button" />
+
+
+        <TextView
+            android:id="@+id/imageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginRight="60dp"
+            android:text="Images"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/furImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:src="@drawable/diningtable"
+            android:visibility="invisible" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/anotherProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD ANOTHER PRODUCT"
+        android:visibility="invisible" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quicksell">
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/quicksell"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/quicksell"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity android:name=".activities.HomePage"/>
+        <activity android:name=".activities.UploadPhoto"/>
+        <activity android:name=".activities.Login"/>
+        <activity android:name=".activities.WelcomeShop"/>
+        <activity android:name=".activities.FillAddress"/>
+        <activity android:name=".activities.ActivityProgress"/>
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+<!--
+        <activity android:name=".activities.WelcomeActivity"/>
+-->
+
+
+
+ <!--   <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+    <activity android:name=".activities.LoginActivity">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+    </activity>
+
+<application/>
+</manifest>
+-->
